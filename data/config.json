@@ -1,7 +1,7 @@
 {
   "ai": {
     "provider": "gemini",
-    "model": "gemini-2.0-flash",
+    "model": "gemini-2.5-flash",
     "api_key_env": "GOOGLE_API_KEY"
   },
   "sources": {
@@ -34,7 +34,7 @@
     "default_profile": "finance-news",
     "profile_settings": {
       "finance-news": {
-        "threshold": 4.0,
+        "threshold": 3.0,
         "topic_dedup": true
       }
     }
