@@ -8,10 +8,10 @@
     "reddit": {
       "enabled": true,
       "subreddits": [
-        { "name": "wallstreetbets", "profile": "finance-news" },
-        { "name": "stocks", "profile": "finance-news" },
-        { "name": "Daytrading", "profile": "finance-news" },
-        { "name": "pennystocks", "profile": "finance-news" }
+        { "subreddit": "wallstreetbets", "profile": "finance-news" },
+        { "subreddit": "stocks", "profile": "finance-news" },
+        { "subreddit": "Daytrading", "profile": "finance-news" },
+        { "subreddit": "pennystocks", "profile": "finance-news" }
       ]
     },
     "google_news": {
