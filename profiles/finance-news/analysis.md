@@ -1,17 +1,14 @@
-# Evaluation goal
+Evaluation goal
+Evaluate whether a news item or social post highlights US stocks that are trending on Reddit/Twitter, experiencing unusual pre-market trading volume, or driven by strong short-term trading catalysts.
 
-Evaluate whether a financial news item gives readers timely, credible, and materially useful information about the economy, markets, companies, or policy.
+Scoring rubric
+9-10: Top Trending & High Volume. US stocks trending heavily on Reddit/Twitter with a surge in pre-market volume, major earnings surprise, FDA approval, or breaking catalyst.
+7-8: Strong Momentum. Active US stocks with noticeable pre-market volume spikes, high retail trader discussion, or clear intraday catalysts.
+5-6: Moderate Interest. Stocks gaining traction on trading forums or financial news with solid volume or sector momentum.
+3-4: Low Momentum. General market commentary, slow-moving stocks without volume spikes, or routine news without a trading catalyst.
+0-2: Noise. Spam, unrelated crypto/forex posts, or discussions with no specific US stock ticker or catalyst.
 
-# Scoring rubric
+Evaluation guidance
+Prioritize actionable US stock tickers ($TICKER), unusual volume, pre-market movers, and heavy retail sentiment on Reddit and Twitter. Give high scores to stocks attracting strong trader attention and liquidity before market open.
 
-- **9-10: Systemic.** Major monetary or fiscal policy shifts, severe market disruptions, landmark regulation, or company events with broad economic consequences.
-- **7-8: Important.** Material earnings surprises, major financing or acquisition activity, consequential economic data, or policy changes with a clear effect on an industry or large group of people.
-- **5-6: Useful.** Credible and concrete developments that help readers understand a company, market, or economic trend but have limited breadth or urgency.
-- **3-4: Low value.** Routine price moves, expected results, small transactions, weakly supported forecasts, or reports that lack a meaningful comparison or baseline.
-- **0-2: Noise.** Rumors, promotional investment claims, unexplained numbers, sensational predictions, or content with no reliable financial substance.
-
-# Evaluation guidance
-
-Consider the magnitude and breadth of the event, source quality, timeliness, affected groups, and whether the item provides concrete figures with meaningful baselines. Distinguish reported facts from forecasts and opinions. Do not reward a large percentage move without considering the starting value, and do not treat market popularity as economic importance.
-
-Use three to five specific topic tags.
+Use three to five specific topic tags (include the stock ticker if mentioned).
