@@ -5,53 +5,35 @@
     "api_key_env": "GOOGLE_API_KEY"
   },
   "sources": {
-    "reddit": [
-      {
-        "subreddit": "wallstreetbets",
-        "limit": 15,
-        "profile": "tech-news"
-      },
-      {
-        "subreddit": "stocks",
-        "limit": 15,
-        "profile": "tech-news"
-      },
-      {
-        "subreddit": "Daytrading",
-        "limit": 10,
-        "profile": "tech-news"
-      },
-      {
-        "subreddit": "pennystocks",
-        "limit": 10,
-        "profile": "tech-news"
-      }
-    ],
-    "google_news": [
-      {
-        "name": "Pre-Market High Volume Movers",
-        "query": "premarket stock movers unusual volume today",
-        "profile": "tech-news"
-      },
-      {
-        "name": "Trending Stocks Twitter Reddit",
-        "query": "most talked about stocks Reddit Twitter today",
-        "profile": "tech-news"
-      }
-    ],
+    "reddit": {
+      "enabled": true,
+      "subreddits": [
+        { "name": "wallstreetbets", "profile": "finance-news" },
+        { "name": "stocks", "profile": "finance-news" },
+        { "name": "Daytrading", "profile": "finance-news" },
+        { "name": "pennystocks", "profile": "finance-news" }
+      ]
+    },
+    "google_news": {
+      "enabled": true,
+      "queries": [
+        { "query": "premarket stock movers unusual volume today", "profile": "finance-news" },
+        { "query": "most talked about stocks Reddit Twitter today", "profile": "finance-news" }
+      ]
+    },
     "rss": [
       {
         "name": "Yahoo Finance Top Tickers",
         "url": "https://yahoo.com",
-        "profile": "tech-news"
+        "profile": "finance-news"
       }
     ]
   },
   "processing": {
     "profiles_dir": "profiles",
-    "default_profile": "tech-news",
+    "default_profile": "finance-news",
     "profile_settings": {
-      "tech-news": {
+      "finance-news": {
         "threshold": 4.0,
         "topic_dedup": true
       }
